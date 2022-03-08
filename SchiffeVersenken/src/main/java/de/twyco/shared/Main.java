@@ -22,6 +22,7 @@ public class Main {
 			}
 		}else {
 			System.out.println("Starte Player Client");
+			spielerclient = new SpielerClient();
 			spielerclient.start();
 		}
 	}

@@ -1,9 +1,6 @@
 package de.twyco.shared;
 import java.net.*;
 
-import de.twyco.server.Connection;
-
-
 /**
  * <p>Materialien zu den zentralen
  * Abiturpruefungen im Fach Informatik ab 2012 in

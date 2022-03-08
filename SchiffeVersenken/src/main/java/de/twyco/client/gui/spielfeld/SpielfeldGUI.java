@@ -25,7 +25,7 @@ public class SpielfeldGUI extends JFrame{
 	private JLabel[][] labels = new JLabel[10][10];
 	private JPanel panel1;
 	
-	public SpielfeldGUI(int sizeX, int sizeY) {
+	public SpielfeldGUI(int sizeX, int sizeY, String playername, String enemyname) {
 		super();
 		setVisible(false);
 		setTitle("Schiffeversenken");
@@ -78,8 +78,8 @@ public class SpielfeldGUI extends JFrame{
 		JLabel s = new JLabel(showImg(Zustaende.SCHIFF));
 		panel2.add(s);
 		
-		pane.add("Eigenes Spielfeld", panel1);
-		pane.add("Gegnerisches Spielfeld", panel2);
+		pane.add(new String("Dein Spielfeld (%s)").formatted(playername), panel1);
+		pane.add(new String("%s's Spielfeld").formatted(enemyname), panel2);
 		
 		this.add(pane);
 		this.pack();
